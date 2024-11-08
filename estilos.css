@@ -1,0 +1,228 @@
+/* Fondo de la página */
+body {
+    background-color: #e0f7fa; /* Color de fondo azul claro */
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    color: #333; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+/* Estilizar encabezados */
+h1 {
+    font-family: 'Georgia', serif; /* Cambiar tipo de fuente para h1 */
+    color: #0077b6; /* Azul oscuro para h1 */
+    font-size: 2.5em; 
+    margin: 20px 0; 
+    text-align: center; 
+    animation: fadeIn 0.5s ease-in-out; /* Efecto de entrada */
+}
+
+h2 {
+    color: #008CBA; /* Azul más claro para h2 */
+    font-size: 2em; 
+    margin: 15px 0; 
+    animation: fadeIn 0.5s ease-in-out; /* Efecto de entrada */
+}
+
+h3 {
+    color: #555; /* Un gris suave para h3 */
+    font-size: 1.5em; 
+    margin: 10px 0; 
+    animation: fadeIn 0.5s ease-in-out; /* Efecto de entrada */
+}
+
+/* Márgenes y relleno a elementos principales */
+header, main, footer {
+    max-width: 1000px; 
+    width: 100%; 
+    margin: 20px; 
+    padding: 20px; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+/* Separador */
+.separator {
+    height: 1px; 
+    background-color: #ccc; 
+    margin: 20px 0; 
+}
+
+/* Menú de navegación */
+nav {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 15px; 
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    gap: 10px; 
+}
+
+nav ul li a {
+    display: inline-block; 
+    padding: 12px 20px; 
+    background-color: #0077b6; /* Color de fondo */
+    color: white; 
+    text-decoration: none; 
+    border-radius: 10px; /* Bordes más redondeados */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s; /* Transiciones suaves */
+    box-shadow: 0px 4px 8px rgba(0, 119, 182, 0.5); /* Sombra suave */
+}
+
+nav ul li a:hover {
+    background-color: #005f8a; /* Color de fondo más oscuro en hover */
+    box-shadow: 0px 6px 12px rgba(0, 119, 182, 0.7); /* Sombra más pronunciada en hover */
+    transform: translateY(-2px); /* Efecto de elevación en hover */
+}
+
+nav ul li a.active {
+    background-color: #023e8a; /* Color de fondo para el enlace activo */
+    box-shadow: 0px 6px 12px rgba(0, 119, 182, 0.7); /* Sombra para el enlace activo */
+}
+
+/* Estilo para el pie de página */
+footer {
+    text-align: center; 
+    color: #777; 
+    font-size: 0.9em; 
+    margin-top: auto; 
+    padding: 20px; 
+}
+
+/* Estilo para la sección de comentarios */
+.comments-section {
+    margin-top: 30px; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.comments-section h3 {
+    color: #333; 
+    font-size: 1.8em; 
+    margin-bottom: 15px; 
+}
+
+.comment {
+    border-bottom: 1px solid #ccc; 
+    padding: 10px 0; 
+}
+
+.comment:last-child {
+    border-bottom: none; 
+}
+
+.comment-author {
+    font-weight: bold; 
+    color: #0077b6; 
+}
+
+.comment-text {
+    margin: 5px 0; 
+    line-height: 1.5; 
+}
+
+/* Estilo para el formulario de comentarios */
+.comment-form {
+    margin-top: 20px; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.comment-form label {
+    margin-bottom: 5px; 
+    color: #333; 
+}
+
+.comment-form input, 
+.comment-form textarea {
+    padding: 10px; 
+    margin: 5px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 1em; 
+    transition: border-color 0.3s; 
+}
+
+.comment-form input:focus, 
+.comment-form textarea:focus {
+    border-color: #0077b6; 
+    outline: none; 
+}
+
+.comment-form button {
+    background-color: #0077b6; 
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0px 2px 5px rgba(0, 119, 182, 0.5); 
+}
+
+.comment-form button:hover {
+    background-color: #023e8a; 
+    transform: translateY(-2px) scale(1.05); /* Efecto de escalado en hover */
+}
+
+/* Estilo para imagen con estilo moderno */
+.imagen-reducida {
+    width: 90%; 
+    max-width: 600px; 
+    height: auto; 
+    display: block; 
+    margin: 15px auto; 
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em; 
+    }
+    
+    .comment-form {
+        width: 100%; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 5px; 
+    }
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Estilos para redes sociales */
+.social-media {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    gap: 10px; 
+}
+
+.social-media a {
+    text-decoration: none; 
+    color: #0077b6; /* Color base de los iconos */
+    font-size: 26px; /* Ajusta el tamaño del icono */
+    transition: color 0.2s; /* Efecto para el hover */
+}
+
+.social-media a:hover {
+    color: #023e8a; /* Color cuando se pasa el mouse */
+}
+

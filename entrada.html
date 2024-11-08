@@ -26,24 +26,35 @@
             </nav>
         </header>
 
-        <!-- Sección principal con entradas de blog resumidas -->
+        <!-- Sección principal con el contenido completo de la entrada -->
         <main>
             <article>
-                <h2><a href="entrada.html">Ford Mustang 1967: Potencia Americana</a></h2>
-                <p>Explora el icónico Ford Mustang 1967, una de las leyendas más influyentes de la historia automotriz estadounidense...</p>
+                <h2>Ford Mustang 1967: Potencia Americana</h2>
+                <p>El Ford Mustang 1967 pertenece a la primera generación del Ford Mustang (1964-1973), una línea de vehículos...</p>
                 <img src="mustang-1967.jpg" alt="Imagen del Ford Mustang 1967" class="imagen-reducida">
+                <p>El Mustang de 1967 es un modelo icónico de Ford que destacó por su diseño más robusto y agresivo...</p>
             </article>
-        </main>
 
-        <!-- Barra lateral con información del autor y enlaces de interés -->
-        <aside>
-            <h3>Sobre el autor</h3>
-            <p>Soy un entusiasta de los coches clásicos, con un amor especial por los deportivos de las décadas pasadas. Aquí comparto mi pasión.</p>
-            <h3>Enlaces de interés</h3>
-            <ul>
-                <li><a href="#">Historia del Ford Mustang</a></li>
-            </ul>
-        </aside>
+            <!-- Sección de comentarios -->
+            <section class="comments-section">
+                <h3>Comentarios</h3>
+                <div class="comment">
+                    <span class="comment-author">Pedro:</span>
+                    <div class="comment-text">¡Este coche es increíble, siempre ha sido mi sueño tener uno!</div>
+                </div>
+                <div class="comment">
+                    <span class="comment-author">Juan:</span>
+                    <div class="comment-text">Adoro el diseño clásico de los Mustangs, sin duda un coche que no pasa de moda.</div>
+                </div>
+                <!-- Formulario para añadir un comentario -->
+                <form class="comment-form" action="#" method="post">
+                    <h3>Deja tu comentario:</h3>
+                    <input type="text" placeholder="Tu nombre" required>
+                    <textarea rows="4" placeholder="Tu comentario" required></textarea>
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+            </section>
+        </main>
 
         <!-- Pie de página con información de contacto -->
         <footer>
@@ -52,5 +63,6 @@
         </footer>
 
     </div>
+
 </body>
 </html>
